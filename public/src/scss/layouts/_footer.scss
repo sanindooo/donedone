@@ -1,0 +1,43 @@
+.footer {
+    //lighter color
+    background: #faf9f5;
+
+    &-brand {
+
+        &-links {
+
+            &--item {
+                filter: brightness(70%);
+            }
+        }
+    }
+
+    &-links {
+
+        &-col {
+            margin: 1.5rem 0;
+
+            &--heading {
+
+                h3 {
+                    @extend .tracking-content--sub;
+                }
+            }
+
+            &-item {
+                font-size: 0.9rem;
+                line-height: 1.5;
+                margin-bottom: 0.7rem;
+            }
+        }
+    }
+
+    &-rights {
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+    }
+}

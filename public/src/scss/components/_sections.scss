@@ -1,0 +1,207 @@
+.hero {
+
+    &-top {
+
+    }
+
+    &-content {
+
+        &--heading {
+
+        }
+
+    }
+
+    &-video {
+
+        &--placeholder {
+
+        }
+
+        &--play {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-bottom {
+
+        &-heading {
+            font-size: 0.8rem;
+            margin: 0 auto;
+        }
+
+        &-logos {
+
+            &__item {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+.tracking {
+    overflow: visible;
+
+    &-content {
+
+        &--sub {
+            @extend .hero-bottom-heading;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    &-img {
+
+        &--bg {
+            z-index: -1;
+            width: 85vw;
+            height: 85vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--btn {
+            @extend .hero-video--play;
+        }
+    }
+}
+
+.support {
+
+    &-content {
+
+        &--sub {
+            @extend .tracking-content--sub;
+        }
+    }
+
+    &-img {
+
+        &--bg {
+            @extend .tracking-img--bg;
+        }
+
+        &--btn {
+            @extend .hero-video--play;
+        }
+    }
+}
+
+.workflows {
+
+    &-content {
+
+        &--sub {
+            @extend .tracking-content--sub;
+        }
+    }
+
+    &-img {
+
+        &--bg {
+            @extend .tracking-img--bg;
+        }
+
+        &--btn {
+            @extend .hero-video--play;
+        }
+    }
+}
+
+.production {
+
+    &-content {
+
+        &--sub {
+            @extend .tracking-content--sub;
+        }
+    }
+
+    &-img {
+
+        &--bg {
+            @extend .tracking-img--bg;
+        }
+
+        &--btn {
+            @extend .hero-video--play;
+        }
+    }
+}
+
+.reports {
+
+    &-content {
+
+        &--sub {
+            @extend .tracking-content--sub;
+        }
+    }
+
+    &-img {
+
+        &--bg {
+            @extend .tracking-img--bg;
+        }
+
+        &--btn {
+            @extend .hero-video--play;
+        }
+    }
+}
+
+.testimonial {
+
+    &-heading {
+
+    }
+
+    &-img {
+
+    }
+
+    &-content {
+
+        font-size: 1.2rem;
+
+        footer {
+            font-weight: 600;
+        }
+
+        &-name {
+
+        }
+
+        &-position {
+
+        }
+    }
+}
+
+.integrations {
+
+    &-icon {
+
+    }
+
+    &-heading {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    &-brand {
+        max-width: 100%;
+    }
+}
+
+.cta {
+
+    &-arrow {
+
+    }
+}

@@ -1,0 +1,26 @@
+.nav {
+    &-link {
+
+        &:after {
+            //position: absolute;
+            width: 98%;
+            /* max-width: 7rem; */
+            display: block;
+            margin: 0 auto;
+            height: 3px;
+            background-color: #ff0080;
+            background-color: red;
+            border-radius: 999px;
+            top: 105%;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            transform-origin: 50% 50%;
+            transition: transform 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+            &:hover {
+                transform: scaleX(2);
+            }
+        }
+    }
+}

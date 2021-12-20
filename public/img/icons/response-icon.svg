@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <filter id="5fquqcnr7a" width="110%" height="110%" x="-5%" y="-2.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.466666667 0 0 0 0 0.549019608 0 0 0 0 0.564705882 0 0 0 0.16 0"/>
+        </filter>
+        <path id="b2pyga6blb" d="M19.861 40c10.39 0 19.724-5.767 19.724-16.176 0-5.725 2.381-14.771-4.265-19.858C28.674-1.12 17.681-.354 13.215 1.03 8.925 2.36 0 5.767 0 16.176 0 21.272.643 26.65 3.924 31.05 7.344 35.638 14.558 40 19.86 40z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-363 -741) translate(32 144) translate(51 597) translate(280) rotate(-180 20 20)">
+                            <use fill="#000" filter="url(#5fquqcnr7a)" xlink:href="#b2pyga6blb"/>
+                            <use fill="#3294F1" xlink:href="#b2pyga6blb"/>
+                        </g>
+                        <g>
+                            <g>
+                                <path fill="#FEFEFE" d="M.258 18.654c0 1.328 1.01 2.404 2.256 2.404 1.246 0 2.256-1.076 2.256-2.404 0-1.328-1.01-2.404-2.256-2.404-1.246 0-2.256 1.076-2.256 2.404z" transform="translate(-363 -741) translate(32 144) translate(51 597) translate(280) translate(7 7) rotate(90 11.07 12.763)"/>
+                                <path fill="#FFF" d="M2.261 1.083h.313c1.159 0 2.113.912 2.164 2.07l.044 1.002c.062 1.551.093 3.994.093 4.728v3.034c0 1.196-.97 2.166-2.167 2.166h-.401c-1.169 0-2.127-.927-2.166-2.095C.047 9.127 0 7.225 0 6.283c0-.782.032-1.829.097-3.14.058-1.154 1.01-2.06 2.164-2.06zM10.968.475h.238c1.172 0 2.132.932 2.166 2.104l.077 2.759c.062 2.456.093 6.324.093 7.487v6.066c0 1.197-.97 2.167-2.167 2.167h-.376c-1.178 0-2.14-.942-2.166-2.12-.11-5.201-.166-8.611-.166-10.23 0-1.463.045-3.51.136-6.141C8.843 1.4 9.8.475 10.968.475zM19.635.475h.238c1.172 0 2.132.932 2.165 2.104.041 1.422.067 2.341.077 2.759.062 2.456.093 6.324.093 7.487v6.066c0 1.197-.97 2.167-2.166 2.167h-.376c-1.179 0-2.14-.942-2.166-2.12-.111-5.201-.167-8.611-.167-10.23 0-1.463.046-3.51.136-6.141.04-1.167.998-2.092 2.166-2.092z" transform="translate(-363 -741) translate(32 144) translate(51 597) translate(280) translate(7 7) rotate(90 11.07 12.763)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+.search-tab {
+    &__btn {
+        display: none;
+
+        button {
+            &.active {
+                color: rgb(190, 24, 93);
+                border-bottom: solid 3px rgb(190, 24, 93);
+            }
+        }
+    }
+
+    &__field {
+        display: none;
+
+        &.active {
+            display: inline;
+        }
+
+        &--btn {
+            display: inline;
+        }
+    }
+}
