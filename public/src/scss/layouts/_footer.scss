@@ -1,6 +1,7 @@
 .footer {
     //lighter color
-    background: #faf9f5;
+    background: $cream;
+    color: $grey;
 
     &-brand {
 
@@ -15,7 +16,11 @@
     &-links {
 
         &-col {
-            margin: 1.5rem 0;
+
+        }
+
+        &-list {
+            margin: 1.5rem 1rem;
 
             &--heading {
 
@@ -25,9 +30,17 @@
             }
 
             &-item {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 line-height: 1.5;
                 margin-bottom: 0.7rem;
+                opacity: 0.7;
+                transition: opacity .3s ease-in-out;
+                font-family: $title-font-family;
+
+                &:hover {
+                    opacity: 1;
+                    text-decoration: underline;
+                }
             }
         }
     }

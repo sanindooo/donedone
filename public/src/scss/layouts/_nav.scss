@@ -1,25 +1,241 @@
 .nav {
-    &-link {
+    //display: none;
+    margin: 1.5rem 0;
+    position: absolute;
+    //background: $green;
+    width: 100%;
+    transform: translateX(-110%);
+    transition: transform .3s ease-in-out;
 
-        &:after {
-            //position: absolute;
-            width: 98%;
-            /* max-width: 7rem; */
-            display: block;
-            margin: 0 auto;
-            height: 3px;
-            background-color: #ff0080;
-            background-color: red;
-            border-radius: 999px;
-            top: 105%;
-            left: 0;
-            right: 0;
-            transform: scaleX(0);
-            transform-origin: 50% 50%;
-            transition: transform 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    @include wi-mq(lap) {
+        //display: block;
+        position: static;
+        overflow: visible;
+        margin: 0;
+        background: 0;
+        width: auto;
+        transform: translateX(0);
+    }
+
+    &.active {
+        display: block;
+        transform: translateX(0%);
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+
+            @include wi-mq(lap) {
+                width: auto;
+                padding: 0;
+            }
+
+            &.active {
+
+                .child-nav {
+                    display: block;
+                }
+            }
 
             &:hover {
-                transform: scaleX(2);
+
+                .child-nav {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &:focus-within {
+
+                .child-nav {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: .25rem 0;
+            font-family: $title-font-family;
+            font-size: 1rem;
+            //color: #fdfdfd;
+            //font-family: $bold-font-family;
+            transition: color .3s ease-in-out;
+            opacity: 0.8;
+
+            &--children {
+                width: calc(100% - (50px + 1.5rem));
+            }
+
+            .nav-list__icon {
+                display: none;
+                margin: 0 0 0 .3rem;
+                transition: color .3s ease-in-out;
+
+                @include wi-mq(lap) {
+                    display: block;
+                    //color: #fdfdfd;
+                    font-size: 1.3rem;
+                }
+            }
+
+            &--current {
+                //color: $primary;
+
+                .nav-list__icon {
+                    //color: $primary;
+                }
+            }
+
+            &--disabled {
+
+                &:hover, &:focus {
+                    cursor: default;
+                }
+            }
+
+            @include wi-mq(lap) {
+                width: 100%;
+                padding: 2rem .75rem;
+            }
+
+            @include wi-mq(desk) {
+                padding: 2.75rem 1rem;
+            }
+
+            &:hover, &:focus {
+
+                @include wi-mq(lap) {
+                    //color: $primary;
+
+                    .nav-list__icon {
+                        //color: $primary;
+                    }
+                }
+            }
+
+            &--cta {
+
+                @include wi-mq(lap) {
+                    padding: .75rem 1.5rem;
+                    //border: 2px solid $primary;
+                    //border-radius: $border-radius;
+                    margin: 0 0 0 1rem;
+                }
+
+                &:hover, &:focus {
+
+                    @include wi-mq(lap) {
+                        //background: $secondary;
+                        //border: 2px solid $secondary;
+                        color: #fdfdfd;
+                    }
+                }
+            }
+
+            &:hover, &:focus {
+
+                ~ .child-nav {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        &__icon {
+            display: inline-block;
+        }
+    }
+
+    &-btn {
+        display: block;
+        color: $green;
+
+        @include wi-mq(lap) {
+            display: none;
+        }
+    }
+}
+
+.child-nav {
+    //display: none;
+    width: 100%;
+    //padding: 0 0 0 1.5rem;
+    z-index: 2;
+
+    //&:before {
+    //    content: '';
+    //    display: none;
+    //    height: 30px;
+    //    width: 30px;
+    //    transform: rotate(45deg);
+    //    position: absolute;
+    //    left: 25px;
+    //    top: -10px;
+    //    background: $green;
+    //    border-radius: 5px;
+    //
+    //    @include wi-mq(desk) {
+    //        display: block;
+    //    }
+    //}
+
+    @include wi-mq(lap) {
+        display: block;
+        width: 250px;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        //left: 1.5rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &-list {
+        position: relative;
+        z-index: 1;
+        background: white;
+        overflow: hidden;
+        padding: 1rem 0;
+
+        @include wi-mq(lap) {
+            //border-radius: $border-radius;
+            //background: $secondary;
+        }
+
+        &__link {
+            display: block;
+            //font-family: $bold-font-family;
+            //color: #fdfdfd;
+            padding: .5rem 0;
+            //font-size: .9rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+
+            @include wi-mq(lap) {
+                padding: .5rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            &:hover, &:focus {
+
+                @include wi-mq(lap) {
+                    //color: $primary;
+                }
             }
         }
     }

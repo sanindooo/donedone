@@ -9,12 +9,12 @@
     text-shadow: none;
     font-weight: 600;
     margin: 1.5rem 0;
-    width: 100%;
-    transform: scaleX(1);
-    transition: all .2s ease-in-out;
+    width: auto;
+    transform: scale(1);
+    transition: all .1s ease-in-out;
 
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
         background: #0067c8;
     }
 }

@@ -3,8 +3,10 @@
  */
 
 $default-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$base-font-family: 'proxima-nova', $default-font;
-$title-font-family: 'proxima-nova', $default-font;
+//'Zilla Slab',sans-serif
+$base-font-family: 'Zilla Slab', serif, $default-font;
+//Rubik Light
+$title-font-family: 'Rubik', sans-serif, $default-font;
 
 /*
  * Colours
@@ -15,8 +17,10 @@ $orange: #d09c13;
 $dark-yellow: #7a9629;
 $blue: #0078a0;
 $light-grey: #d9d9d9;
-$grey: #9c9c9c;
+$grey: #3f5b60;
 $dark-grey: #4c4c4c;
+$cream: #faf9f5;
+$green: #01363d;
 
 /*
  * UI Colours

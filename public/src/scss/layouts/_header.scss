@@ -1,50 +1,70 @@
 .site-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #fff;
-	z-index: 10;
-	box-shadow: 0 0 15px -5px rgba($base-color, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &.active {
+        //background: $base-color;
+        height: 100vh;
+        overflow-y: scroll;
+    }
 }
 
 .site-logo {
-	display: block;
-	width: 140px;
-	height: 55px;
-	margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1rem 1.5rem 0;
 
-	@include wi-mq(lap) {
-		margin: 1rem 0 0;
-		width: 120px;
-		height: 47px;
-	}
+    @include wi-mq(lap) {
+        padding: 1rem 1rem 1rem 0;
+    }
 
-	@include wi-mq(desk) {
-		margin: 0;
-	}
+    svg {
+        width: 140px;
+        height: 30px;
 
-	@include wi-mq(widescreen) {
-		width: 245px;
-		height: 97px;
-		margin: 0;
-	}
-
-	svg {
-		width: 100%;
-	}
+        @include wi-mq(desk) {
+            width: 200px;
+            height: 45px;
+        }
+    }
 }
 
-.section-anchor {
-	position: absolute;
-	left: 0;
-	display: block;
-	width: 100%;
-	top: -87px;
-	height: 87px;
+.mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: 0;
+    padding: 1rem 0;
+    color: $green;
 
-	@include wi-mq(desk) {
-		top: -146px;
-		height: 146px;
-	}
+    @include wi-mq(lap) {
+        display: none;
+    }
+
+    &:hover, &:focus {
+        cursor: pointer;
+    }
+
+    &__icon {
+        fill: $green;
+
+        &--close {
+            display: none;
+        }
+    }
+
+    &.active {
+
+        .mobile-btn__icon--open {
+            display: none;
+        }
+
+        .mobile-btn__icon--close {
+            display: block;
+        }
+    }
 }

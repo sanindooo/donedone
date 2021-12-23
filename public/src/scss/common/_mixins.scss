@@ -93,3 +93,30 @@
 		color: $base-color;
 	}
 }
+
+$breakpoints: (
+    "stamp":            "screen and (max-width: 420px)",
+    "thumb":            "screen and (min-width: 640px)",
+    "lap":              "screen and (min-width: 768px)",
+    "up-to-lap":        "screen and (max-width: 800px)",
+    "lap-large":        "screen and (min-width: 1024px)",
+    "desk":             "screen and (min-width: 1285px)",
+    "widescreen":       "screen and (min-width: 1536px)",
+);
+
+@mixin wi-mq($alias) {
+
+    // Search breakpoint map for alias
+    $query: map-get($breakpoints, $alias);
+
+    // If alias exists, print out media query
+    @if $query {
+        @media #{$query} {
+            @content;
+        }
+    }
+
+    @else {
+        @error "No breakpoint found for #{$alias}";
+    }
+}
