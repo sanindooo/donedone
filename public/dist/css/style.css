@@ -1260,8 +1260,20 @@ p strong {
   color: #3f5b60;
 }
 
+@media screen and (min-width: 1285px) {
+  .footer-brand {
+    max-width: 35%;
+  }
+}
+
 .footer-brand-links--item {
   filter: brightness(70%);
+}
+
+@media screen and (min-width: 1285px) {
+  .footer-links {
+    width: 55%;
+  }
 }
 
 .footer-links-list {

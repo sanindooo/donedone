@@ -1,21 +1,21 @@
-<footer class="footer mt-8 md:mt-24 py-16 border-t">
+<footer class="footer mt-8 lg:mt-24 py-16 border-t">
 
-    <div class="container text-center md:text-left">
+    <div class="container text-center lg:text-left">
 
-        <div class="md:flex justify-between">
+        <div class="lg:flex justify-between">
 
-            <div class="footer-brand flex flex-col items-center justify-center md:items-start md:justify-start md:w-1/3">
+            <div class="footer-brand flex flex-col items-center justify-center lg:items-start lg:justify-start">
 
                 <a class="inline mb-6" href="/">
                     <img class="" src="img/logos/done-done-full-logo.svg" alt="DoneDone brand logo">
                 </a>
 
 
-                <p>Helping thousands of companies work better since 2009. Read about <a class="" href="#"> our story </a>. </p>
+                <p>Helping thousands of companies work better since 2009. Read about <a class="" href="#"> our story</a>. </p>
 
                 <nav class="footer-brand-links">
 
-                    <ul class="flex items-center md:-ml-6">
+                    <ul class="flex items-center lg:-ml-6">
                         <li> <a class="footer-brand-links--item" href="#"> <img class="p-6" src="img/logos/twitter-logo.svg" alt="twitter logo"> </a> </li>
                         <li> <a class="footer-brand-links--item" href="#"> <img class="p-6" src="img/logos/facebook-logo.svg" alt="facebook logo"> </a> </li>
                         <li> <a class="footer-brand-links--item" href="#"> <img class="p-6" src="img/logos/youtube-logo.svg" alt="youtube logo"> </a> </li>
@@ -25,7 +25,7 @@
 
             </div>
 
-            <nav class="footer-links md:flex md:flex-wrap md:w-2/3 lg:w-1/2">
+            <nav class="footer-links md:flex md:flex-wrap justify-center lg:justify-between">
 
                 <div class="footer-links-col">
 

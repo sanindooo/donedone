@@ -4,6 +4,9 @@
     color: $grey;
 
     &-brand {
+        @include wi-mq(desk) {
+            max-width: 35%;
+        }
 
         &-links {
 
@@ -14,6 +17,9 @@
     }
 
     &-links {
+        @include wi-mq(desk) {
+            width: 55%;
+        }
 
         &-col {
 
