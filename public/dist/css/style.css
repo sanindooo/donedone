@@ -844,6 +844,50 @@ main {
   -o-transition: none !important;
 }
 
+.modal {
+  position: fixed;
+  z-index: 1000;
+  display: none;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal-close {
+  color: white;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+}
+
+.modal-frame {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  display: block;
+  pointer-events: all;
+}
+
 /*! purgecss start ignore */
 
 h1, h2, h3, h4, h5, h6 {
@@ -1034,7 +1078,7 @@ p strong {
   }
 }
 
-.btn {
+.btn, .btn--secondary {
   display: inline-block;
   padding: 1rem 1rem;
   line-height: 1;
@@ -1046,13 +1090,25 @@ p strong {
   font-weight: 600;
   margin: 1.5rem 0;
   width: auto;
+  border: solid 2px #017ef4;
+  font-family: "Rubik", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   transform: scale(1);
   transition: all 0.1s ease-in-out;
 }
 
-.btn:hover {
+.btn:hover, .btn--secondary:hover {
   transform: scale(1.01);
   background: #0067c8;
+}
+
+.btn--secondary {
+  background: white;
+  color: #017ef4;
+  border: solid 2px #017ef4;
+}
+
+.btn--secondary:hover {
+  background: white;
 }
 
 .hero {
@@ -1060,9 +1116,22 @@ p strong {
 }
 
 .hero-video--play, .reports-img--btn, .production-img--btn, .workflows-img--btn, .support-img--btn, .tracking-img--btn {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-video--play:hover, .reports-img--btn:hover, .production-img--btn:hover, .workflows-img--btn:hover, .support-img--btn:hover, .tracking-img--btn:hover {
+  transform: scale(1.05);
 }
 
 .hero-bottom-heading, .tracking-content--sub, .footer-links-list--heading h3, .reports-content--sub, .production-content--sub, .workflows-content--sub, .support-content--sub {
@@ -1097,6 +1166,18 @@ p strong {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.2;
+}
+
+.support-img--arrow {
+  transform: rotate(-100deg);
+}
+
+.production-img--arrow {
+  transform: rotate(-195deg);
+}
+
+.reports-img--arrow {
+  transform: rotate(-172deg);
 }
 
 .testimonial {
@@ -1207,16 +1288,12 @@ p strong {
 }
 
 .site-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
-}
-
-.site-header.active {
-  height: 100vh;
-  overflow-y: scroll;
+  z-index: 900;
+  background: white;
 }
 
 .site-logo {
@@ -1225,7 +1302,7 @@ p strong {
   padding: 1.5rem 1rem 1.5rem 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .site-logo {
     padding: 1rem 1rem 1rem 0;
   }
@@ -1253,7 +1330,7 @@ p strong {
   color: #01363d;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .mobile-btn {
     display: none;
   }
@@ -1280,27 +1357,45 @@ p strong {
 }
 
 .nav {
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1.5rem -2.5rem;
+  padding-left: 1.5rem;
   position: absolute;
-  width: 100%;
-  transform: translateX(-110%);
+  overflow-x: scroll;
+  max-width: 65%;
+  height: 100vh;
+  transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
+  .nav {
+    padding-top: 1rem;
+    margin-top: 89px;
+    max-width: 15rem;
+  }
+}
+
+@media screen and (min-width: 1285px) {
   .nav {
     position: static;
     overflow: visible;
     margin: 0;
+    padding-top: 0;
     background: 0;
+    max-width: 100%;
+    height: 100%;
     width: auto;
     transform: translateX(0);
   }
 }
 
 .nav.active {
-  display: block;
   transform: translateX(0%);
+}
+
+.nav-cta--item {
+  padding: 0.5rem;
+  font-weight: 400;
 }
 
 .nav-list {
@@ -1361,7 +1456,7 @@ p strong {
   transition: color 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .nav-list__link .nav-list__icon {
     display: block;
     font-size: 1.3rem;
@@ -1372,7 +1467,7 @@ p strong {
   cursor: default;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .nav-list__link {
     width: 100%;
     padding: 2rem 0.75rem;
@@ -1380,19 +1475,13 @@ p strong {
 }
 
 @media screen and (min-width: 1285px) {
-  .nav-list__link {
-    padding: 2.75rem 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .nav-list__link--cta {
     padding: 0.75rem 1.5rem;
     margin: 0 0 0 1rem;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .nav-list__link--cta:hover, .nav-list__link--cta:focus {
     color: #fdfdfd;
   }
@@ -1412,7 +1501,7 @@ p strong {
   color: #01363d;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .nav-btn {
     display: none;
   }
@@ -1423,15 +1512,16 @@ p strong {
   z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .child-nav {
     display: block;
-    width: 250px;
+    width: 400px;
     padding: 0;
     position: absolute;
     top: 100%;
     opacity: 0;
     visibility: hidden;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1446,15 +1536,29 @@ p strong {
 .child-nav-list__link {
   display: block;
   padding: 0.5rem 0;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .child-nav-list__link {
     padding: 0.5rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
+}
+
+.child-nav-list__link:hover, .child-nav-list__link:focus {
+  transform: scale(1.03);
+}
+
+.child-nav-sub {
+  font-family: "Rubik", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  color: #3f5b60;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .blog__header {

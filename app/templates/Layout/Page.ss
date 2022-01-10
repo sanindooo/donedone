@@ -1,5 +1,3 @@
-
-
 <main class="overflow-hidden">
     <section class="hero py-20 relative">
 
@@ -25,17 +23,31 @@
 
                 </div>
 
-                <div class="hero-video relative lg:w-2/5">
+                <div class="hero-video mt-4 lg:mt-0 relative lg:w-2/5">
 
                     <img class="hero-video--placeholder rounded-xl mb-12 md:mb-0" src="img/woman-speaking.jpg">
 
-                    <a class="hero-video--play absolute bg-white p-6 rounded-full shadow-md" href="#">
+                    <button class="hero-video--play absolute bg-white p-6 rounded-full shadow-md" data-modal-target="#modal1">
                         <img class="hero-video--play__btn" src="img/icons/play-icon.svg">
-                    </a>
+                    </button>
 
                 </div>
 
+                <div class="modal" id="modal1">
+
+                    <button data-close-button class="modal-close">&times;</button>
+
+                    <iframe class="modal-frame" width="560" height="315" src="https://www.youtube.com/embed/gDhfgknINg8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+
+                </div>
+
+
             </header>
+
+            <div id="overlay"></div>
 
             <footer class="hero-bottom md:mt-12">
                 <div class="hero-bottom--content text-center">
@@ -83,13 +95,25 @@
                         <img class="tracking-img--status hidden md:block absolute -top-16 -right-12 w-4/5 shadow-md" src="img/mobile-network.jpg">
                         <img class="tracking-img--tasks shadow-md" src="img/zapier-feed.jpg">
                         <img class="tracking-img--backend hidden md:block absolute right-0 -bottom-24 -right-12 w-1/2 shadow-md" src="img/backend-bugs-and-updates.jpg">
-                        <img class="tracking-img--arrow hidden md:block absolute left-32 -bottom-24" src="img/icons/double-loop-arrow.svg">
+                        <img class="tracking-img--arrow hidden w-16 md:block absolute left-52 -bottom-20" src="img/icons/double-loop-arrow.svg">
 
-                        <a class="tracking-img--btn absolute bg-white p-6 rounded-full shadow-md" href="#">
+                        <button class="tracking-img--btn absolute bg-white p-6 rounded-full shadow-md" data-modal-target="#modal2">
                             <img class="" src="img/icons/play-icon.svg">
-                        </a>
+                        </button>
 
                     </figure>
+
+                    <div class="modal" id="modal2">
+
+                        <button data-close-button class="modal-close">&times;</button>
+
+                        <iframe class="modal-frame" width="560" height="315"
+                                src="https://www.youtube.com/embed/GPQfnS4Tv80"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+
+                    </div>
 
                 </div>
 
@@ -100,7 +124,7 @@
 
     </section>
 
-    <section class="support mt-24 md:mt-0">
+    <section class="support mt-24 md:mt-12 md:mt-0">
 
         <article class="text-center lg:text-left md:py-20">
 
@@ -125,13 +149,25 @@
                         <img class="support-img--feed shadow-md md:w-9/12 mx-auto" src="img/text-feed.jpg">
                         <img class="support-img--filter hidden absolute md:block top-1/4 -left-12 w-2/5 shadow-md" src="img/filters.jpg">
                         <img class="support-img--customer hidden absolute md:block -bottom-12 -left-6 w-1/2 shadow-md" src="img/customer-support.jpg">
-                        <img class="support-img--arrow hidden absolute md:block right-12 -bottom-12 rotate-90" src="img/icons/curve-right-arrow.svg">
+                        <img class="support-img--arrow hidden absolute w-12 md:block right-32 -bottom-20" src="img/icons/curve-right-arrow.svg">
 
-                        <a class="support-img--btn absolute bg-white p-6 rounded-full shadow-md" href="#">
+                        <button class="support-img--btn absolute bg-white p-6 rounded-full shadow-md" data-modal-target="#modal3">
                             <img class="" src="img/icons/play-icon.svg">
-                        </a>
+                        </button>
 
                     </figure>
+
+                    <div class="modal" id="modal3">
+
+                        <button data-close-button class="modal-close">&times;</button>
+
+                        <iframe class="modal-frame" width="560" height="315"
+                                src="https://www.youtube.com/embed/EElNWoMjrrI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+
+                    </div>
 
                 </div>
 
@@ -142,7 +178,7 @@
 
     </section>
 
-    <section class="workflows mt-24 md:mt-0">
+    <section class="workflows mt-24 md:-mt-14 lg:mt-0">
 
         <article class="text-center lg:text-left md:py-20">
 
@@ -167,13 +203,25 @@
                         <img class="workflows-img--status md:absolute -top-16 -left-12 md:w-4/5 shadow-md" src="img/high-connectivity.jpg">
                         <img class="workflows-img--feed hidden md:block md:w-4/5 shadow-md" src="img/message-thread.jpg">
                         <img class="workflows-img--progress w-3/5 md:w-1/3 md:absolute -bottom-36 -right-4 shadow-md" src="img/note-progress.jpg ">
-                        <img class="workflows-img--arrow hidden md:block absolute w-12 -bottom-20 right-36" src="img/icons/double-loop-arrow.svg">
+                        <img class="workflows-img--arrow hidden md:block absolute w-12 -bottom-20 right-40" src="img/icons/double-loop-arrow.svg">
 
-                        <a class="support-img--btn absolute bg-white p-6 rounded-full shadow-md" href="#">
+                        <button class="support-img--btn absolute bg-white p-6 rounded-full shadow-md" data-modal-target="#modal4">
                             <img class="" src="img/icons/play-icon.svg">
-                        </a>
+                        </button>
 
                     </figure>
+
+                    <div class="modal" id="modal4">
+
+                        <button data-close-button class="modal-close">&times;</button>
+
+                        <iframe class="modal-frame" width="560" height="315"
+                                src="https://www.youtube.com/embed/Z7rkxgq6-Ac"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+
+                    </div>
 
                 </div>
 
@@ -184,7 +232,7 @@
 
     </section>
 
-    <section class="production mt-24 md:mt-0">
+    <section class="production mt-24 md:mt-18 lg:mt-0">
 
         <article class="text-center lg:text-left md:py-20">
 
@@ -209,11 +257,7 @@
                         <img class="production-img--request hidden md:block absolute -top-24 md:w-3/5 shadow-md" src="img/request-for-annual-payment.jpg">
                         <img class="production-img--report hidden md:block absolute top-1/2 z-20 md:w-3/5 left-12 shadow-md" src="img/linked-tasks.jpg">
                         <img class="production-img--link relative mx-auto lg:mr-0 md:mr-4 z-10 w-3/5 md:w-3/5 shadow-md" src="img/linked-task.jpg">
-                        <img class="production-img--arrow hidden md:block absolute" src="img/icons/loop-arrow.svg">
-
-<%--                        <a class="production-img--btn absolute bg-white p-6 rounded-full shadow-md z-20" href="#">--%>
-<%--                            <img class="" src="img/icons/play-icon.svg">--%>
-<%--                        </a>--%>
+                        <img class="production-img--arrow hidden md:block absolute w-10 z-50 -top-16 right-32" src="img/icons/loop-arrow.svg">
 
                     </figure>
 
@@ -226,7 +270,7 @@
 
     </section>
 
-    <section class="reports mt-24 md:mt-0">
+    <section class="reports mt-24 md:mt-16 lg:mt-0">
 
         <article class="text-center lg:text-left md:py-20">
 
@@ -251,7 +295,7 @@
                         <img class="reports-img--response hidden md:block absolute -top-32 md:w-4/5 shadow-md" src="img/first-response-time.jpg">
                         <img class="reports-img--tasks relative z-10 md:w-4/5 mx-auto shadow-md" src="img/active-tasks.jpg">
                         <img class="reports-img--average md:absolute left-24 -bottom-32 z-20 md:w-4/5 shadow-md" src="img/average-response-time.jpg">
-                        <img class="reports-img--arrow hidden md:block absolute right-0 z-30" src="img/icons/curve-right-arrow.svg">
+                        <img class="reports-img--arrow hidden md:block absolute w-12 -right-8 bottom-20 z-30" src="img/icons/curve-right-arrow.svg">
 
 <%--                        <a class="reports-img--btn absolute bg-white p-6 rounded-full shadow-md" href="#">--%>
 <%--                            <img class="" src="img/icons/play-icon.svg">--%>
@@ -268,7 +312,7 @@
 
     </section>
 
-    <section class="testimonial mt-30 md:mt-40 py-16 relative">
+    <section class="testimonial mt-10 md:mt-64 lg:mt-32 py-16 relative">
 
         <img class="h-12 w-full absolute top-0" src="/img/round-divider-top.svg">
 
@@ -282,7 +326,7 @@
 
                     <div class="lg:flex md:text-left justify-between relative">
 
-                        <article class="testimonial lg:w-1/2 -mx-4 md:flex items-start">
+                        <article class="testimonial lg:w-1/2 lg:-mx-4 md:flex items-start">
 
                             <img class="testimonial-img w-12 rounded-full mx-auto my-6 md:my-0 md:mr-4" src="img/derek-fansler.jpg">
 
@@ -310,7 +354,7 @@
 
                         </article>
 
-                        <article class="testimonial mt-6 lg:w-1/2 -mx-4 md:flex items-start">
+                        <article class="testimonial mt-6 lg:mt-0 lg:w-1/2 lg:-mx-4 md:flex items-start">
 
                             <img class="testimonial-img w-12 rounded-full mx-auto my-6 md:my-0 md:mr-4" src="img/sousa.jpg">
 

@@ -1,15 +1,17 @@
 .site-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 900;
+    background: white;
+    //overflow: hidden;
 
-    &.active {
-        //background: $base-color;
-        height: 100vh;
-        overflow-y: scroll;
-    }
+    //&.active {
+    //    //background: $base-color;
+    //    height: 100vh;
+    //    overflow-y: scroll;
+    //}
 }
 
 .site-logo {
@@ -17,7 +19,7 @@
     align-items: center;
     padding: 1.5rem 1rem 1.5rem 0;
 
-    @include wi-mq(lap) {
+    @include wi-mq(desk) {
         padding: 1rem 1rem 1rem 0;
     }
 
@@ -41,7 +43,7 @@
     padding: 1rem 0;
     color: $green;
 
-    @include wi-mq(lap) {
+    @include wi-mq(desk) {
         display: none;
     }
 

@@ -10,11 +10,24 @@
     font-weight: 600;
     margin: 1.5rem 0;
     width: auto;
+    border: solid 2px #017ef4;
+    font-family: $title-font-family;
     transform: scale(1);
     transition: all .1s ease-in-out;
 
     &:hover {
         transform: scale(1.01);
         background: #0067c8;
+    }
+
+    &--secondary {
+        @extend .btn;
+        background: white;
+        color: #017ef4;
+        border: solid 2px #017ef4;
+
+        &:hover {
+            background: white;
+        }
     }
 }

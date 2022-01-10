@@ -34,17 +34,3 @@
 		width: 100%;
 	}
 }
-
-.section-anchor {
-	position: absolute;
-	left: 0;
-	display: block;
-	width: 100%;
-	top: -87px;
-	height: 87px;
-
-	@include wi-mq(desk) {
-		top: -146px;
-		height: 146px;
-	}
-}

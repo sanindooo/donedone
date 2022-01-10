@@ -1,103 +1,20 @@
-<%--<header class="pb-2 md:pb-5 sticky top-0 bg-white border-b-2">--%>
-
-<%--    <div class="container lg:flex items-center justify-between lg:justify-start">--%>
-<%--        <div class="flex items-center w-full lg:w-auto justify-between py-2 md:pr-4 md:py-2">--%>
-<%--            <div>--%>
-<%--                <a href="/">--%>
-<%--                    <img class="" src="img/logos/done-done-full-logo.svg">--%>
-<%--                </a>--%>
-<%--            </div>--%>
-
-<%--            <div>--%>
-
-<%--                <button id="mobileBtn" type="button" class="hover:text-gray-500 focus:text-white focus:outline-none transition-colors duration-300 ease-in-out lg:hidden">--%>
-
-<%--                    <!-- burger icon  -->--%>
-<%--                    <svg id="burger" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">--%>
-<%--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />--%>
-<%--                    </svg>--%>
-<%--                    <!-- burger end  -->--%>
-
-<%--                    <!-- close icon  -->--%>
-<%--                    <svg id="close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">--%>
-<%--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />--%>
-<%--                    </svg>--%>
-<%--                    <!-- close end  -->--%>
-
-<%--                </button>--%>
-
-<%--            </div>--%>
-<%--        </div>--%>
-
-<%--        <nav id="mobileNav" class="hidden overflow-scroll text-left">--%>
-<%--            <ul class="pt-2 pb-3 block text-center">--%>
-<%--                <li><h3 href="#" class="block rounded transition-colors duration-300 ease-in-out uppercase">How it Works</h3></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Bug Tracking</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Customer Support</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Task Management</a></li>--%>
-<%--                <li><a href="#" class="block mt-8 py-2 rounded transition-colors duration-300 ease-in-out font-normal text-base">Login</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded hover:bg-pink-600 transition-colors duration-300 ease-in-out font-normal text-base border-2 border-pink-500 p-4 rounded-3xl">Sign up</a></li>--%>
-<%--            </ul>--%>
-<%--            <ul class="pt-2 pb-3 block text-center">--%>
-<%--                <li><h3 href="#" class="block rounded transition-colors duration-300 ease-in-out uppercase">Teams</h3></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Marketing</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Product</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Project Management</a></li>--%>
-<%--                --%><%--                <li><a href="#" class="block mt-8 py-2 rounded transition-colors duration-300 ease-in-out font-normal text-base">Login</a></li>--%>
-<%--                --%><%--                <li><a href="#" class="block mt-2 py-2 rounded hover:bg-pink-600 transition-colors duration-300 ease-in-out font-normal text-base border-2 border-pink-500 p-4 rounded-3xl">Sign up</a></li>--%>
-<%--            </ul>--%>
-<%--            <ul class="pt-2 pb-3 block text-center">--%>
-<%--                <li><h3 href="#" class="block rounded transition-colors duration-300 ease-in-out uppercase">Acount & Help</h3></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">New User? Try it free!</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Pricing</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 rounded transition-colors duration-300 ease-in-out">Contact us</a></li>--%>
-<%--                --%><%--                <li><a href="#" class="block mt-8 py-2 rounded transition-colors duration-300 ease-in-out font-normal text-base">Login</a></li>--%>
-<%--                --%><%--                <li><a href="#" class="block mt-2 py-2 rounded hover:bg-pink-600 transition-colors duration-300 ease-in-out font-normal text-base border-2 border-pink-500 p-4 rounded-3xl">Sign up</a></li>--%>
-<%--            </ul>--%>
-<%--        </nav>--%>
-
-<%--        <nav id="lapNav" class="hidden lg:inline lg:w-full lg:ml-8">--%>
-<%--            <ul class="pt-2 pb-3 block md:flex text-center text-2xl lg:text-xl h-screen md:h-full overflow-scroll">--%>
-<%--                <li><a href="#" class="block mt-2 py-2 mr-4 rounded transition-colors duration-300 ease-in-out">Home</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 mr-4 rounded transition-colors duration-300 ease-in-out">Experiences</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 mr-4 rounded transition-colors duration-300 ease-in-out">Careers resources</a></li>--%>
-<%--                <li><a href="#" class="block mt-2 py-2 mr-4 rounded transition-colors duration-300 ease-in-out">Case studies</a></li>--%>
-<%--                <li class="ml-auto"><a href="#" class="block mt-2 py-2 rounded hover:bg-pink-600 transition-colors duration-300 ease-in-out font-normal text-base border-2 md:border-4 border-pink-500 px-6 rounded-3xl">Sign up</a></li>--%>
-<%--            </ul>--%>
-<%--        </nav>--%>
-
-<%--    </div>--%>
-<%--</header>--%>
-<header class="site-header siteHeader sticky bg-white border-b">
-    <div class="container">
-        <div class="flex justify-between flex-wrap">
+<header class="site-header siteHeader sticky border-b">
+    <div class="mx-10">
+        <div class="flex justify-between align-center lg:justify-start flex-wrap bg-white">
             <a href="/" class="site-logo">
                 <span class="sr-only">Home</span>
-                <img class="" src="img/logos/done-done-full-logo.svg">
+                <img class="hidden md:block" src="img/logos/done-done-full-logo.svg">
+                <img class="md:hidden w-10" src="img/logos/donedone-icon-logo.png">
             </a>
-            <button type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu" id="mobileBtn" class="mobile-btn">
-                <svg class="mobile-btn__icon mobile-btn__icon--open" viewBox="0 0 100 70" width="22.5" height="15" focusable="false">
-                    <rect width="100" height="8"></rect>
-                    m		<rect y="30" width="100" height="8"></rect>
-                    <rect y="60" width="100" height="8"></rect>
-                </svg>
-                <svg class="mobile-btn__icon mobile-btn__icon--close z-50" viewBox="0 0 100 100" width="18" height="18">
-                    <g>
-                        <path d="M58.1,50.1l37.6-37.6c2.1-2.1,2.1-5.5,0-7.6c-2.1-2.1-5.5-2.1-7.6,0L50.5,42.5L12.9,4.9c-2.1-2.1-5.5-2.1-7.6,0
-							c-2.1,2.1-2.1,5.5,0,7.6l37.6,37.6L5.2,87.7c-2.1,2.1-2.1,5.5,0,7.6c2.1,2.1,5.5,2.1,7.6,0l37.6-37.6L88,95.3
-							c2.1,2.1,5.5,2.1,7.6,0c2.1-2.1,2.1-5.5,0-7.6L58.1,50.1z"></path>
-                    </g>
-                </svg>
-            </button>
 
-            <nav id="nav" class="nav bg-white">
+            <nav id="nav" class="nav bg-white" data-visible="false">
                 <ul class="nav-list">
 
                     <li class="nav-list__item">
                         <div href="/what-we-do/" class="nav-list__link nav-list__link--children">
-                            <span class="uppercase" >How it works</span>
+                            <span class="uppercase xl:normal-case" >How it works</span>
 
-                            <span class="icon-arrow-down nav-list__icon" aria-hidden="true"></span>
+                            <span class="icon-arrow-down nav-list__icon hidden lg:block" aria-hidden="true"> <img src="img/icons/down-icon.svg"> </span>
 
                         </div>
 
@@ -109,20 +26,34 @@
                             <ul class="child-nav-list">
 
                                 <li class="child-nav-list__item">
-                                    <a href="/what-we-do/flodatix-sensor/" class="child-nav-list__link">
-                                        <span>Bug Tracking</span>
+                                    <a href="/what-we-do/flodatix-sensor/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block" src="img/icons/red-warning.svg">
+                                        <div>
+                                            <span>Bug Tracking</span>
+                                            <span class="hidden xl:block child-nav-sub">Log, track and resolve issues</span>
+                                        </div>
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/what-we-do/flodatix-applied/" class="child-nav-list__link">
-                                        <span>Customer Support</span>
+                                    <a href="/what-we-do/flodatix-applied/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block" src="img/icons/yellow-question.svg">
+                                        <div>
+                                            <span>Customer Support</span>
+                                            <span class="hidden xl:block child-nav-sub">Manage customer support tickets</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/what-we-do/flodatix-insight/" class="child-nav-list__link">
-                                        <span>Task Management</span>
+                                    <a href="/what-we-do/flodatix-insight/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block" src="img/icons/green-tick-icon.svg">
+                                        <div>
+                                            <span>Task Management</span>
+                                            <span class="hidden xl:block child-nav-sub">Simplify tasks and to-dos</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
@@ -133,9 +64,9 @@
 
                     <li class="nav-list__item">
                         <div class="nav-list__link nav-list__link--children nav-list__link--disabled">
-                            <span class="uppercase">Teams</span>
+                            <span class="uppercase xl:normal-case">Teams</span>
 
-                            <span class="icon-arrow-down nav-list__icon" aria-hidden="true"></span>
+                            <span class="icon-arrow-down nav-list__icon hidden lg:block" aria-hidden="true"> <img src="img/icons/down-icon.svg"> </span>
 
                         </div>
 
@@ -147,20 +78,32 @@
                             <ul class="child-nav-list">
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-story/" class="child-nav-list__link">
-                                        <span>Marketing</span>
+                                    <a href="/who-we-are/our-story/" class="child-nav-list__link flex items-center">
+                                        <div>
+                                            <span>Marketing</span>
+                                            <span class="hidden xl:block child-nav-sub">For sales, PR and marketing teams</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-team/" class="child-nav-list__link">
-                                        <span>Product</span>
+                                    <a href="/who-we-are/our-team/" class="child-nav-list__link flex items-center">
+                                        <div>
+                                            <span>Product</span>
+                                            <span class="hidden xl:block child-nav-sub">For software, web and app teams</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-team/" class="child-nav-list__link">
-                                        <span>Project Management</span>
+                                    <a href="/who-we-are/our-team/" class="child-nav-list__link flex items-center">
+                                        <div>
+                                            <span>Project Management</span>
+                                            <span class="hidden xl:block child-nav-sub">For property managers and HOAs</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
@@ -171,7 +114,7 @@
 
                     <li class="nav-list__item md:hidden">
                         <div class="nav-list__link nav-list__link--children nav-list__link--disabled">
-                            <span class="uppercase">Account and Help</span>
+                            <span class="uppercase xl:normal-case">Account and Help</span>
 
                             <span class="icon-arrow-down nav-list__icon" aria-hidden="true"></span>
 
@@ -215,9 +158,9 @@
 
                     <li class="nav-list__item hidden md:block">
                         <div class="nav-list__link nav-list__link--children nav-list__link--disabled">
-                            <span class="uppercase">Resources</span>
+                            <span class="uppercase xl:normal-case">Resources</span>
 
-                            <span class="icon-arrow-down nav-list__icon" aria-hidden="true"></span>
+                            <span class="icon-arrow-down nav-list__icon hidden lg:block" aria-hidden="true"> <img src="img/icons/down-icon.svg"> </span>
 
                         </div>
 
@@ -229,38 +172,69 @@
                             <ul class="child-nav-list">
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-story/" class="child-nav-list__link">
-                                        <span>Blog</span>
+                                    <a href="/who-we-are/our-story/" class="child-nav-list__link flex items-center">
+
+                                        <img class="mr-4 hidden xl:block w-12" src="img/icons/purple-pencil.png">
+                                        <div>
+                                            <span>Blog</span>
+                                            <span class="hidden xl:block child-nav-sub">Thoughts, opinions and product updates</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-team/" class="child-nav-list__link">
-                                        <span>Help Docs</span>
+                                    <a href="/who-we-are/our-team/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block w-12" src="img/icons/response-icon.svg">
+                                        <div>
+                                            <span>Help Docs</span>
+                                            <span class="hidden xl:block child-nav-sub">Answers to all things DoneDone</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-team/" class="child-nav-list__link">
-                                        <span>Bug Tracking Guide</span>
+                                    <a href="/who-we-are/our-team/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block" src="img/icons/red-warning.svg">
+                                        <div>
+                                            <span>Bug Tracking Guide</span>
+                                            <span class="hidden xl:block child-nav-sub">Our guide to bug tracking and best practices</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-team/" class="child-nav-list__link">
-                                        <span>Customer Support Guide</span>
+                                    <a href="/who-we-are/our-team/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block" src="img/icons/yellow-question.svg">
+                                        <div>
+                                            <span>Customer Support Guide</span>
+                                            <span class="hidden xl:block child-nav-sub">Our guide to happy customers and staff</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-team/" class="child-nav-list__link">
-                                        <span>Project Management Guide</span>
+                                    <a href="/who-we-are/our-team/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block" src="img/icons/green-tick-icon.svg">
+                                        <div>
+                                            <span>Project Management Guide</span>
+                                            <span class="hidden xl:block child-nav-sub">Our guide to staying a step ahead</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
                                 <li class="child-nav-list__item">
-                                    <a href="/who-we-are/our-team/" class="child-nav-list__link">
-                                        <span>Remote Checklist</span>
+                                    <a href="/who-we-are/our-team/" class="child-nav-list__link flex items-center">
+                                        <img class="mr-4 hidden xl:block w-12" src="img/icons/purple-tick.png">
+                                        <div>
+                                            <span>Remote Checklist</span>
+                                            <span class="hidden xl:block child-nav-sub">How to achieve work-from-home success</span>
+                                        </div>
+
                                     </a>
                                 </li>
 
@@ -269,7 +243,7 @@
 
                     </li>
 
-                    <li class="nav-list__item hidden md:block">
+                    <li class="nav-list__item hidden xl:block">
                         <a href="/news/" class="nav-list__link">
                             <span>Pricing</span>
 
@@ -277,16 +251,34 @@
 
                     </li>
 
-<%--                    <li class="nav-list__item">--%>
-<%--                        <a href="/contact/" class="nav-list__link nav-list__link--cta">--%>
-<%--                            <span>Contact</span>--%>
-
-<%--                        </a>--%>
-
-<%--                    </li>--%>
-
                 </ul>
             </nav>
+
+            <div class="flex items-center justify-between ml-auto">
+
+                <div class="hidden nav-cta md:flex items-center justify-between">
+                    <button class="nav-cta--item btn--secondary mr-4">Log In</button>
+                    <button class="nav-cta--item btn">Try for Free</button>
+                </div>
+
+                <button type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav" id="mobileBtn" class="mobile-btn ml-8">
+                    <svg class="mobile-btn__icon mobile-btn__icon--open" viewBox="0 0 100 70" width="22.5" height="15" focusable="false">
+                        <rect width="100" height="8"></rect>
+                        m		<rect y="30" width="100" height="8"></rect>
+                        <rect y="60" width="100" height="8"></rect>
+                    </svg>
+                    <svg class="mobile-btn__icon mobile-btn__icon--close z-50" viewBox="0 0 100 100" width="18" height="18">
+                        <g>
+                            <path d="M58.1,50.1l37.6-37.6c2.1-2.1,2.1-5.5,0-7.6c-2.1-2.1-5.5-2.1-7.6,0L50.5,42.5L12.9,4.9c-2.1-2.1-5.5-2.1-7.6,0
+							c-2.1,2.1-2.1,5.5,0,7.6l37.6,37.6L5.2,87.7c-2.1,2.1-2.1,5.5,0,7.6c2.1,2.1,5.5,2.1,7.6,0l37.6-37.6L88,95.3
+							c2.1,2.1,5.5,2.1,7.6,0c2.1-2.1,2.1-5.5,0-7.6L58.1,50.1z"></path>
+                        </g>
+                    </svg>
+                </button>
+
+            </div>
+
+
 
         </div>
     </div>

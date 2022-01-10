@@ -1,25 +1,46 @@
 .nav {
     //display: none;
-    margin: 1.5rem 0;
+    //offset container padding
+    margin: 1.5rem 0 1.5rem -2.5rem;
+    padding-left: 1.5rem;
     position: absolute;
+    overflow-x: scroll;
     //background: $green;
-    width: 100%;
-    transform: translateX(-110%);
+    max-width: 65%;
+    height: 100vh;
+    transform: translateX(-100%);
     transition: transform .3s ease-in-out;
 
-    @include wi-mq(lap) {
+    @include wi-mq(thumb) {
+        padding-top: 1rem;
+        margin-top: 89px;
+        max-width: 15rem;
+    }
+
+    @include wi-mq(desk) {
         //display: block;
         position: static;
         overflow: visible;
         margin: 0;
+        padding-top: 0;
         background: 0;
+        max-width: 100%;
+        height: 100%;
         width: auto;
         transform: translateX(0);
     }
 
     &.active {
-        display: block;
+        //display: block;
         transform: translateX(0%);
+    }
+
+    &-cta {
+
+        &--item {
+            padding: 0.5rem;
+            font-weight: 400;
+        }
     }
 
     &-list {
@@ -86,7 +107,7 @@
                 margin: 0 0 0 .3rem;
                 transition: color .3s ease-in-out;
 
-                @include wi-mq(lap) {
+                @include wi-mq(desk) {
                     display: block;
                     //color: #fdfdfd;
                     font-size: 1.3rem;
@@ -108,18 +129,18 @@
                 }
             }
 
-            @include wi-mq(lap) {
+            @include wi-mq(desk) {
                 width: 100%;
                 padding: 2rem .75rem;
             }
-
+            // widescreen?
             @include wi-mq(desk) {
-                padding: 2.75rem 1rem;
+                //padding: 2.75rem 1rem;
             }
 
             &:hover, &:focus {
 
-                @include wi-mq(lap) {
+                @include wi-mq(desk) {
                     //color: $primary;
 
                     .nav-list__icon {
@@ -130,7 +151,7 @@
 
             &--cta {
 
-                @include wi-mq(lap) {
+                @include wi-mq(desk) {
                     padding: .75rem 1.5rem;
                     //border: 2px solid $primary;
                     //border-radius: $border-radius;
@@ -139,7 +160,7 @@
 
                 &:hover, &:focus {
 
-                    @include wi-mq(lap) {
+                    @include wi-mq(desk) {
                         //background: $secondary;
                         //border: 2px solid $secondary;
                         color: #fdfdfd;
@@ -165,7 +186,7 @@
         display: block;
         color: $green;
 
-        @include wi-mq(lap) {
+        @include wi-mq(desk) {
             display: none;
         }
     }
@@ -194,15 +215,16 @@
     //    }
     //}
 
-    @include wi-mq(lap) {
+    @include wi-mq(desk) {
         display: block;
-        width: 250px;
+        width: 400px;
         padding: 0;
         position: absolute;
         top: 100%;
         //left: 1.5rem;
         opacity: 0;
         visibility: hidden;
+        box-shadow: 1px 1px 20px rgba(0,0,0,0.1);
     }
 
     &-list {
@@ -223,20 +245,31 @@
             //color: #fdfdfd;
             padding: .5rem 0;
             //font-size: .9rem;
-            font-size: 1.4rem;
+            font-size: 1rem;
             font-weight: 700;
+            transform: scale(1);
+            transition: all .2s ease-in-out;
 
-            @include wi-mq(lap) {
+            @include wi-mq(desk) {
                 padding: .5rem 1.5rem;
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
             &:hover, &:focus {
+                transform: scale(1.03);
 
-                @include wi-mq(lap) {
+                @include wi-mq(desk) {
                     //color: $primary;
                 }
             }
         }
+    }
+
+    &-sub {
+        font-family: $title-font-family;
+        font-weight: 400;
+        color: $grey;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
     }
 }
